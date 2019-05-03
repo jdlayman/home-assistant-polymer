@@ -173,6 +173,7 @@ class HaOnboarding extends litLocalizeLiteMixin(LitElement) {
   }
 
   private async _submitForm(): Promise<void> {
+    ev.preventDefault();
     if (!this._name || !this._username || !this._password) {
       this._errorMsg = "required_fields";
       return;

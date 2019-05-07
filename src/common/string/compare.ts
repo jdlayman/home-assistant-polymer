@@ -1,4 +1,4 @@
-export default (a, b) => {
+export const compare = (a, b) => {
   if (a < b) {
     return -1;
   }
@@ -8,3 +8,5 @@ export default (a, b) => {
 
   return 0;
 };
+
+export default compare;
